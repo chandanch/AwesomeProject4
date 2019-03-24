@@ -24,11 +24,22 @@ export default class App extends Component<Props> {
     };
     return (
       // 
-      <View style={{alignItems: "center", fontSize: 22}}>
-        <Image source={pic} style={{width: 300, height: 200, margin: 4}}/>
-        <Greeting name="chandio" />
-        <Greeting name="Sam" />
-        <Blink text="This one blinks!!" />
+      <View >
+        {/* <Image source={pic} style={{width: 300, height: 200, margin: 4}}/> */}
+        
+        {/* custom component with props */}
+        {/* <Greeting name="chandio" /> */}
+        {/* <Greeting name="Sam" /> */}
+        
+        {/* state change */}
+        {/* <Blink text="This one blinks!!" />  */}
+        
+        {/* // style */}
+        {/* <Text style={styles.welcome}>AwesomeProject</Text>  */}
+
+        {/* Fixed width & height */}
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 150, height: 150, backgroundColor: 'skyblue'}} /> 
       </View>
     );
   }
@@ -81,10 +92,11 @@ const styles = StyleSheet.create({
     fontSize: 23,
     textAlign: 'center',
     margin: 10,
+    color: 'orange'
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: 'orange',
     marginBottom: 5,
   },
   developer: {
