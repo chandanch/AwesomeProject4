@@ -23,23 +23,10 @@ export default class App extends Component<Props> {
       uri: 'https://teamairship.com/wp-content/uploads/2017/10/react-native-workshop.jpg'
     };
     return (
-      // 
-      <View >
-        {/* <Image source={pic} style={{width: 300, height: 200, margin: 4}}/> */}
-        
-        {/* custom component with props */}
-        {/* <Greeting name="chandio" /> */}
-        {/* <Greeting name="Sam" /> */}
-        
-        {/* state change */}
-        {/* <Blink text="This one blinks!!" />  */}
-        
-        {/* // style */}
-        {/* <Text style={styles.welcome}>AwesomeProject</Text>  */}
-
-        {/* Fixed width & height */}
-        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-        <View style={{width: 150, height: 150, backgroundColor: 'skyblue'}} /> 
+      <View style={{flex: 1}}>
+        <View style={{flex: 1, backgroundColor: 'powderblue'}} />
+        <View style={{flex: 2, backgroundColor: 'skyblue'}} />
+        <View style={{flex: 3, backgroundColor: 'steelblue'}} />
       </View>
     );
   }
